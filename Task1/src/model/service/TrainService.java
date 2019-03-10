@@ -65,6 +65,7 @@ public class TrainService {
         Objects.requireNonNull(wagon);
         Objects.requireNonNull(train);
         if (checkCompatibility(train, (RailwayVehicle) wagon)) {
+            //Exception!!!
             List<RailwayVehicle> trainParts = train.getTrainParts();
             trainParts.add(wagon);
             train.setTrainParts(trainParts);
